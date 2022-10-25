@@ -45,6 +45,8 @@ h2 {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .icon {
@@ -52,22 +54,53 @@ h2 {
     padding-top: 10px;
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 100px;
+}
+
 #hero-img {
     width: 100%;
+}
+
+#hero-msg h4 {
+    color: white;
 }
 
 .card-img {
     border: 10px solid #d9c2a3;
 }
+
 main section img {
     box-sizing: border-box;
 }
+
 /* Top of page */
 
 header {
     background-color: #FCE172;
     font-family: 'RocknRoll One', 'Roboto', 'Georgia', sans-serif;
-
+    display: grid;
+    grid-template-columns: 150px auto;
 
 }
 
@@ -76,6 +109,8 @@ nav a {
     color: #104266;
     text-decoration: none;
     padding: 35px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a:hover {
@@ -92,10 +127,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-#hero-msg h1,
-#hero-msg h4 {
-    text-align: center;
-}
+
 
 
 
@@ -118,6 +150,11 @@ nav a:hover {
 }
 
 /* Middle page */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 10fr;
+}
 
 main section {
     text-align: center;
