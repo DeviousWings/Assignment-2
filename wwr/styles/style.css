@@ -200,7 +200,8 @@ nav a:hover {
 
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 main section {
@@ -214,7 +215,6 @@ main section {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-    grid-gap: 1rem;
 }
 
 .card-img:hover {
@@ -230,14 +230,12 @@ main section {
 
 .camping-card {
     width: 300px;
-
     grid-column: 5/8;
     grid-row: 2/3;
 }
 
 .rapids-card {
     width: 300px;
-
     grid-column: 8/11;
     grid-row: 2/3;
 }
