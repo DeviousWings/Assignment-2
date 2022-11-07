@@ -200,8 +200,7 @@ nav a:hover {
 
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: (10, 1fr);
 }
 
 main section {
