@@ -1,3 +1,4 @@
+
 #faq-hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -50,7 +51,8 @@
 
 .faq-home-grid {
     display: grid;
-    width: 500px;
+    grid-template-columns: 20% 20% 20% 20%;
+    width: 1600px;
     
     
 }
@@ -58,4 +60,11 @@
 .faq-home-grid p {
     font-size: 20px;
     align-items: center;
+
+}
+
+.faq {
+    align-items: center;
+    grid-column: 2/5;
+
 }
