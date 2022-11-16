@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=RocknRoll+One&display=swap');
-* {
+/* * {
     border: 2px solid blue;
-}
+} */
 
 body {
     background-color: #FFFFFF;
@@ -50,6 +50,7 @@ p {
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
 
 .msg h2 {
     color: #104266;
