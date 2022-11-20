@@ -99,7 +99,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   font-size: 18px;
-  /* text-align: center; */
+  text-align: center;
   background-color: #545454;
   font-family: 'Fira Sans', 'Ubuntu', sans-serif;
 
