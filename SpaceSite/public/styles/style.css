@@ -153,7 +153,100 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+/* Slidshow */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: #1D3C60;
+  margin-top: 0%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  /* position: absolute; */
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 footer {
+  border-top: 4px solid #FFFFFF;
   background-color: #1D3C60;
   color: #CDCDCD;
   padding: 25px 50px;
@@ -226,11 +319,16 @@ footer p a:hover {
 }
 
 #hero-msg {
+  opacity: .5;
   text-align: center;
   grid-column: 2/3;
   grid-row: 1/2;
   margin: 100px;
   background-color: #1D3C60;
+}
+
+#hero-msg:hover {
+  opacity: 1.0;
 }
 
 #hero-img {
@@ -245,7 +343,7 @@ footer p a:hover {
 .news-grid {
   display: grid;
   grid-template-columns: repeat(8, 25%);
-  grid-auto-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
   background-color: #1D3C60;
   border-bottom: 5px solid white;
   padding: 45px;
@@ -438,7 +536,6 @@ footer p a:hover {
 }
 
 .background {
-  position: center;
   height: auto;
   width: 100%;
   padding: 20px;
@@ -493,6 +590,10 @@ section {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   color:#CDCDCD;
+}
+
+section h2 {
+  color: #CDCDCD
 }
 
 #hero-mount {
@@ -579,7 +680,6 @@ form {
     text-decoration: none;
     font-size: 15px;
     padding: 15px;
-    margin-top: 1 0px;
     border-radius: 5px;
     font-family: 'RocknRoll One', 'Roboto', 'Georgia', sans-serif;
   }
